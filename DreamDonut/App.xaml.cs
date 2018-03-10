@@ -1,5 +1,7 @@
 ﻿using Xamarin.Forms;
 
+using DreamDonut.Pages;
+
 namespace DreamDonut
 {
     public partial class App : Application
@@ -8,7 +10,7 @@ namespace DreamDonut
         {
             InitializeComponent();
 
-            MainPage = new DreamDonutPage();
+            MainPage = new MainTabbedPage();
         }
 
         protected override void OnStart()

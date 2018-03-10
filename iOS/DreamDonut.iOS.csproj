@@ -123,6 +123,15 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\help-white30.png" />
+    <BundleResource Include="Resources\IceImage.png" />
+    <BundleResource Include="Resources\Juan32.png" />
+    <BundleResource Include="Resources\logoTransparent.png" />
+    <BundleResource Include="Resources\logoWhite.png" />
+    <BundleResource Include="Resources\pizza-30.png" />
+    <BundleResource Include="Resources\pizza-256.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
 </Project>

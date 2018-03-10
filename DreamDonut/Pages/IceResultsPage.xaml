@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="DreamDonut.Pages.IceResultsPage"
+    Title="Sorry!">
+    <ContentPage.Content>
+
+
+        <StackLayout VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="FillAndExpand"
+                Padding="7">
+
+            <StackLayout Padding="15"></StackLayout>
+            
+            <Image Source="IceImage" 
+                WidthRequest="200"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout Padding="15"></StackLayout>
+
+            <Label FontSize="Large" 
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="Sorry!" />
+
+            <Label FontSize="Large" 
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="You were not born on the correct day of the week to garantee you the privilege to a donut." />
+            
+            <StackLayout Padding="20"></StackLayout>
+                        
+            <Button x:Name="GoBackButton" 
+                Text="Go Back" 
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="StartAndExpand"
+                WidthRequest="200" 
+                Clicked="OnGoBackClicked" />
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
