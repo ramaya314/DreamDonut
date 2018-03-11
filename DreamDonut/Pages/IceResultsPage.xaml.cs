@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace DreamDonut.Pages
 {
-    public partial class IceResultsPage : ContentPage
+    public partial class IceResultsPage : ResultsPage
     {
         public IceResultsPage()
         {

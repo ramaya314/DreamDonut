@@ -13,17 +13,24 @@ namespace DreamDonut.Pages
         {
             InitializeComponent();
 
-            var gamePage = new DreamNavigationPage (new HomePage());
-            gamePage.Title = "Pizza";
+            var gamePage = new DreamNavigationPage (new HomePage{
+                BackgroundImageSource = "butterfly.jpg",
+                Title="Home"
+            });
+            gamePage.Title = "Home";
             gamePage.Icon = "pizza-30.png";
             Children.Add (gamePage);
 
-            var aboutDreamersPage = new DreamNavigationPage (new AboutDreamersPage());
+            var aboutDreamersPage = new DreamNavigationPage (new AboutDreamersPage{
+                BackgroundImageSource = "butterfly.jpg"
+            });
             aboutDreamersPage.Title = "About Mason DREAMers";
             aboutDreamersPage.Icon = "Juan32.png";
             Children.Add (aboutDreamersPage);
 
-            var aboutAppPage = new DreamNavigationPage (new AboutAppPage());
+            var aboutAppPage = new DreamNavigationPage (new AboutAppPage{
+                BackgroundImageSource = "butterfly.jpg"
+            });
             aboutAppPage.Title = "About App";
             aboutAppPage.Icon = "help-white30.png";
             Children.Add (aboutAppPage);

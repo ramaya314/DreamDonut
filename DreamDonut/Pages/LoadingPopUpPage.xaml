@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Rg:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Rg="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+    x:Class="DreamDonut.Pages.LoadingPopUpPage">
+
+    <Rg:PopupPage.Animation>
+        <animations:ScaleAnimation 
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1"
+            ScaleOut="0.8"
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"/>
+    </Rg:PopupPage.Animation>
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" >
+        <AbsoluteLayout>
+            <StackLayout x:Name="LoadingLayout"
+                AbsoluteLayout.LayoutBounds="1,1,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Transparent"
+                Opacity="0.5"
+                IsVisible="true">
+                <ActivityIndicator Color="White" IsRunning="true" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </AbsoluteLayout>
+    </StackLayout>
+</Rg:PopupPage>

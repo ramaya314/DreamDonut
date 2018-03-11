@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages:LoadingEnabledPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:Pages="clr-namespace:DreamDonut.Pages;assembly=DreamDonut"
+    xmlns:Converters="clr-namespace:DreamDonut.Converters;assembly=DreamDonut"
+
+    x:Class="DreamDonut.Pages.BackgroundImagePage">
+
+    <Pages:LoadingEnabledPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="BackgroundImagePageTemplate">
+
+                <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+
+                    
+                    <Image x:Name="BackgroundImage"
+                        AbsoluteLayout.LayoutBounds="1,1,1,1"
+                        AbsoluteLayout.LayoutFlags="All"
+                        Aspect="AspectFill"
+                        Source="{TemplateBinding Parent.BackgroundImageSource}" />
+
+                    <StackLayout x:Name="ContentArea"
+                        VerticalOptions="FillAndExpand" 
+                        HorizontalOptions="FillAndExpand"
+                        AbsoluteLayout.LayoutBounds="1,1,1,1"
+                        AbsoluteLayout.LayoutFlags="All"
+                        BackgroundColor="rgba(255,255,255,0.4)">
+
+                        <ScrollView HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand" >
+                            <StackLayout Orientation="Vertical" 
+                                         Padding="15"
+                                         HorizontalOptions="FillAndExpand"
+                                         VerticalOptions="FillAndExpand"
+                                         BackgroundColor="Transparent">
+                                <Frame HorizontalOptions="FillAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       BackgroundColor="rgba(255,255,255,0.9)"
+                                       HasShadow="false"
+                                       CornerRadius="7" >
+                                    <StackLayout
+                                         HorizontalOptions="FillAndExpand"
+                                         VerticalOptions="FillAndExpand"
+                                         Padding="5">
+
+
+                    
+                                        <ContentPresenter x:Name="LoadingContentPresenter" 
+                                            VerticalOptions="FillAndExpand" 
+                                            HorizontalOptions="FillAndExpand"
+                                            BackgroundColor="Transparent"></ContentPresenter>
+
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+
+
+
+                    <StackLayout x:Name="DebugIndicatorLayout"
+                        AbsoluteLayout.LayoutBounds="{TemplateBinding Parent.DebugLayoutBounds}"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        IsVisible="{TemplateBinding Parent.IsDebugLayoutVisible}"
+
+                        BackgroundColor="Black">
+                        <Label TextColor="Red" FontSize="14" Text="{TemplateBinding Parent.DebugLayoutText}" />
+
+                    </StackLayout>
+
+                </AbsoluteLayout>
+            </ControlTemplate>
+
+        </ResourceDictionary>
+    </Pages:LoadingEnabledPage.Resources>
+    
+</Pages:LoadingEnabledPage>

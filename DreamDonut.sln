@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamDonut.Droid", "Droid\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamDonut.UITests", "UITests\DreamDonut.UITests.csproj", "{FFB05A6B-74D4-4BE2-9DE2-F5F32B824F34}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Conditionals", "Conditionals\Conditionals.shproj", "{EEDAF8D1-053F-4309-AABD-99F0F67534E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="DreamDonut.Pages.LoadingEnabledPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="LoadingPageEnabledTemplate">
+
+                <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Black">
+
+                    <ContentPresenter x:Name="LoadingContentPresenter" 
+                        VerticalOptions="FillAndExpand" 
+                        HorizontalOptions="FillAndExpand"
+                        AbsoluteLayout.LayoutBounds="1,1,1,1"
+                        AbsoluteLayout.LayoutFlags="All"></ContentPresenter>
+
+                </AbsoluteLayout>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+</ContentPage>

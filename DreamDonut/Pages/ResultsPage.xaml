@@ -1,5 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DreamDonut.Pages.ResultsPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
-</ContentPage>
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages:BackgroundImagePage xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:Pages="clr-namespace:DreamDonut.Pages;assembly=DreamDonut"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       x:Class="DreamDonut.Pages.ResultsPage">
+
+</Pages:BackgroundImagePage>

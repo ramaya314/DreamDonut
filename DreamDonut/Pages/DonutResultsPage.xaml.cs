@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace DreamDonut.Pages
 {
-    public partial class DonutResultsPage : ContentPage
+    public partial class DonutResultsPage : ResultsPage
     {
         public DonutResultsPage()
         {

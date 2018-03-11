@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<Pages:BackgroundImagePage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
     xmlns:Behaviors="clr-namespace:DreamDonut.Behaviors;assembly=DreamDonut"
+    xmlns:Pages="clr-namespace:DreamDonut.Pages;assembly=DreamDonut"
     xmlns:Converters="clr-namespace:DreamDonut.Converters;assembly=DreamDonut"
+    xmlns:Helpers="clr-namespace:DreamDonut.Helpers;assembly=DreamDonut"
     x:Class="DreamDonut.Pages.HomePage">
 
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-
-            <Converters:BooleanToObjectConverter x:Key="boolToStyleEntries" x:TypeArguments="Style">
-                <Converters:BooleanToObjectConverter.FalseObject>
-                    <Style TargetType="Label" BaseResourceKey="ErrorLabelStyle" >
-                        <Setter Property="IsVisible" Value="true" />
-                    </Style>
-                </Converters:BooleanToObjectConverter.FalseObject>
-
-                <Converters:BooleanToObjectConverter.TrueObject>
-                    <Style TargetType="Label" BaseResourceKey="PrimaryLabelStyle">
-                        <Setter Property="IsVisible" Value="false" />
-                    </Style>
-                </Converters:BooleanToObjectConverter.TrueObject>
-
-            </Converters:BooleanToObjectConverter>
-
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    
-    <ContentPage.Content>
+    <ContentView ControlTemplate="{StaticResource BackgroundImagePageTemplate}">
 
 
         <StackLayout VerticalOptions="CenterAndExpand" 
@@ -51,7 +32,9 @@
                 FontSize="Large"
                 Text="Enter Your Birthdate" />
 
-            <DatePicker x:Name="MainDatePicker" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Now}">
+            <DatePicker x:Name="MainDatePicker" 
+                        VerticalOptions="CenterAndExpand" 
+                        Date="{x:Static sys:DateTime.Now}">
                 <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
                 <DatePicker.MinimumDate>
                     <sys:DateTime x:FactoryMethod="Parse">
@@ -75,10 +58,12 @@
                 Text="Submit" 
                 HorizontalOptions="CenterAndExpand" 
                 VerticalOptions="StartAndExpand"
+                BackgroundColor="{Binding Source={x:Static Helpers:ColorPalette.PrimaryColor}}"
+                TextColor="{Binding Source={x:Static Helpers:ColorPalette.SecondaryColor}}"
                 WidthRequest="200" 
                 Clicked="OnSubmitClicked" />
             
         </StackLayout>
-    </ContentPage.Content>
+    </ContentView>
     
-</ContentPage>
+</Pages:BackgroundImagePage>

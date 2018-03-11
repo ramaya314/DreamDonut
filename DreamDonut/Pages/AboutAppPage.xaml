@@ -1,8 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<Pages:BackgroundImagePage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:Utilities="clr-namespace:DreamDonut.Utilities;assembly=DreamDonut"
+    xmlns:Pages="clr-namespace:DreamDonut.Pages;assembly=DreamDonut"
     x:Class="DreamDonut.Pages.AboutAppPage"
     Title="About App">
-	<ContentPage.Content>
-	</ContentPage.Content>
-</ContentPage>
+    <ContentView ControlTemplate="{StaticResource BackgroundImagePageTemplate}">
+
+
+        <StackLayout VerticalOptions="FillAndExpand" 
+                HorizontalOptions="FillAndExpand"
+                Padding="7">
+
+            <Image Source="logoWhite.png" 
+                WidthRequest="120"
+                HeightRequest="120"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout Padding="15"></StackLayout>
+
+            <Label VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    FontSize="30" Text="{Binding Source={x:Static Utilities:Shared.AppName}}"  >
+            </Label>
+        
+            <Label x:Name="VersionLabel"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    FontSize="22" Text="{Binding VersionLabelText}" >
+            </Label>
+
+            <Label VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    FontSize="15" >
+                ©2018 Mason DREAMers. All rights reserved.
+            </Label>
+
+            <Label x:Name="BodyLabel"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="StartAndExpand"
+                HorizontalTextAlignment="Start"
+                FontSize="20" >
+            </Label>
+
+        
+        </StackLayout>
+        
+    </ContentView>
+</Pages:BackgroundImagePage>
