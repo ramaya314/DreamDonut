@@ -9,16 +9,23 @@
         <StackLayout VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="FillAndExpand"
                 Padding="7">
-            <Label FontSize="32" 
-                FontAttributes="Bold"
+            <Label FontAttributes="Bold"
                 HorizontalOptions="CenterAndExpand"
                 HorizontalTextAlignment="Center"
-                Text="To create a more inclusive enviroment for undocumented students through education and advocacy." />
+                Text="To create a more inclusive enviroment for undocumented students through education and advocacy." >
+                <Label.FontSize>
+                  <OnIdiom x:TypeArguments="x:Double" Tablet="32" Phone="25" />
+                </Label.FontSize>
+            </Label>
 
-            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="20" >
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
                 <Image Source="dreamTeam.jpg" 
                     VerticalOptions="StartAndExpand"
                     HorizontalOptions="CenterAndExpand"/>
+
+                <StackLayout.Padding>
+                    <OnIdiom x:TypeArguments="Thickness" Tablet="20" Phone="5"/>
+                </StackLayout.Padding>
             </StackLayout>
 
 
@@ -26,7 +33,11 @@
                 FontSize="22" 
                 HorizontalOptions="CenterAndExpand"
                 HorizontalTextAlignment="Start"
-                LineBreakMode="WordWrap" />
+                LineBreakMode="WordWrap" >
+                <Label.FontSize>
+                  <OnIdiom x:TypeArguments="x:Double" Tablet="22" Phone="16" />
+                </Label.FontSize>
+            </Label>
 
             <StackLayout Padding="20"></StackLayout>
 

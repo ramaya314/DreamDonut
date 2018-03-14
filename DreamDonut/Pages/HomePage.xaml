@@ -32,8 +32,10 @@
                 FontSize="Large"
                 Text="Enter Your Birthdate" />
 
+            <StackLayout Padding="15"></StackLayout>
+            
             <DatePicker x:Name="MainDatePicker" 
-                        VerticalOptions="CenterAndExpand" 
+                        VerticalOptions="CenterAndExpand"
                         Date="{x:Static sys:DateTime.Now}">
                 <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
                 <DatePicker.MinimumDate>
