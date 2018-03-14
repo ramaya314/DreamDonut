@@ -23,27 +23,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhite.png" translatesAutoresizingMaskIntoConstraints="NO" id="197">
-                                <rect key="frame" x="94" y="283" width="187.5" height="101"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconTransparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="197">
+                                <rect key="frame" x="94" y="240" width="187.5" height="187.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="197" secondAttribute="height" multiplier="308:166" id="Jg7-vT-5dr"/>
+                                    <constraint firstAttribute="width" secondItem="197" secondAttribute="height" multiplier="1:1" id="Jg7-vT-5dr"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mason DREAMers  © 2018 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVc-ku-M1G">
+                                <rect key="frame" x="84" y="626" width="207.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wVc-ku-M1G" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KPI-HX-o2i"/>
                             <constraint firstItem="197" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="S4J-1f-gV7"/>
                             <constraint firstItem="197" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="bKr-zA-o8s"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="wVc-ku-M1G" secondAttribute="bottom" constant="20" id="eEg-Mb-EaQ"/>
                             <constraint firstItem="197" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qFN-hb-EgV"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
-        <image name="logoWhite.png" width="308" height="166"/>
+        <image name="IconTransparent.png" width="660" height="660"/>
     </resources>
 </document>

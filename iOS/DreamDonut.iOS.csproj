@@ -187,10 +187,13 @@
     <BundleResource Include="Resources\Juan32.png" />
     <BundleResource Include="Resources\logoTransparent.png" />
     <BundleResource Include="Resources\logoWhite.png" />
-    <BundleResource Include="Resources\pizza-30.png" />
-    <BundleResource Include="Resources\pizza-256.png" />
     <BundleResource Include="Resources\dreamTeam.jpg" />
     <BundleResource Include="Resources\butterfly.jpg" />
+    <BundleResource Include="Resources\donutSimple512.png" />
+    <BundleResource Include="Resources\donutTabIcon30.png" />
+    <BundleResource Include="Resources\donutTabIcon30%402x.png" />
+    <BundleResource Include="Resources\IconRoundedCorners.png" />
+    <BundleResource Include="Resources\IconTransparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" />

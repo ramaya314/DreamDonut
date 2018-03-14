@@ -18,7 +18,7 @@ namespace DreamDonut.Pages
                 Title="Home"
             });
             gamePage.Title = "Home";
-            gamePage.Icon = "pizza-30.png";
+            gamePage.Icon = "donutTabIcon30";
             Children.Add (gamePage);
 
             var aboutDreamersPage = new DreamNavigationPage (new AboutDreamersPage{

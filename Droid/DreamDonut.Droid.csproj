@@ -179,6 +179,16 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\butterfly.jpg" />
+    <AndroidResource Include="Resources\drawable\donutSimple512.png" />
+    <AndroidResource Include="Resources\drawable\dreamTeam.jpg" />
+    <AndroidResource Include="Resources\drawable\help-white30.png" />
+    <AndroidResource Include="Resources\drawable\IceImage.png" />
+    <AndroidResource Include="Resources\drawable\IconRoundedCorners.png" />
+    <AndroidResource Include="Resources\drawable\IconTransparent.png" />
+    <AndroidResource Include="Resources\drawable\Juan32.png" />
+    <AndroidResource Include="Resources\drawable\logoTransparent.png" />
+    <AndroidResource Include="Resources\drawable\logoWhite.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />

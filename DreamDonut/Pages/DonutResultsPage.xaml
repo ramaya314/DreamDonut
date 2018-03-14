@@ -14,7 +14,7 @@
 
             <StackLayout Padding="15"></StackLayout>
             
-            <Image Source="DonutImage" 
+            <Image Source="donutSimple512" 
                 WidthRequest="200"
                 VerticalOptions="StartAndExpand"
                 HorizontalOptions="CenterAndExpand"/>

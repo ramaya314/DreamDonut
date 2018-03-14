@@ -12,7 +12,7 @@
                 HorizontalOptions="FillAndExpand"
                 Padding="7">
 
-            <Image Source="logoWhite.png" 
+            <Image Source="IconRoundedCorners.png" 
                 WidthRequest="120"
                 HeightRequest="120"
                 VerticalOptions="CenterAndExpand"
