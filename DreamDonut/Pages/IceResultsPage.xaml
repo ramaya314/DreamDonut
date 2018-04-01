@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:Helpers="clr-namespace:DreamDonut.Helpers;assembly=DreamDonut"
     xmlns:Pages="clr-namespace:DreamDonut.Pages;assembly=DreamDonut"
+    xmlns:Components="clr-namespace:DreamDonut.Components;assembly=DreamDonut"
     x:Class="DreamDonut.Pages.IceResultsPage"
     Title="Sorry!">
     <ContentView ControlTemplate="{StaticResource BackgroundImagePageTemplate}">
@@ -13,6 +14,12 @@
                 Padding="7">
 
             <StackLayout Padding="15"></StackLayout>
+
+            <Label FontSize="Large" 
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="Sorry!" />
             
             <Image Source="IceImage.png" 
                 WidthRequest="200"
@@ -21,19 +28,26 @@
 
             <StackLayout Padding="15"></StackLayout>
 
+
             <Label FontSize="Large" 
-                FontAttributes="Bold"
                 HorizontalOptions="CenterAndExpand"
                 HorizontalTextAlignment="Center"
-                Text="Sorry!" />
+                Text="You were born on" />
 
             <Label FontSize="Large" 
                 FontAttributes="Bold"
                 HorizontalOptions="CenterAndExpand"
                 HorizontalTextAlignment="Center"
-                Text="You were not born on the correct day of the week to garantee you the privilege to a donut." />
+                Text="{Binding DayText}" />
             
-            <StackLayout Padding="20"></StackLayout>
+            <Label FontSize="Large" 
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="{Binding ReasonText}" />
+
+            <StackLayout Padding="15"></StackLayout>
+            <Components:RateExperienceView x:Name="RTView" GotDonut="false"/>
+            <StackLayout Padding="15"></StackLayout>
                         
             <Button x:Name="GoBackButton" 
                 Text="Go Back" 

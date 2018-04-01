@@ -32,6 +32,10 @@ namespace DreamDonut.iOS
             UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
             UIApplication.SharedApplication.SetStatusBarHidden (false, false);
 
+            NSDictionary userDefautls = NSDictionary.FromObjectAndKey(new NSNumber(0.5f), new NSString("font_size"));
+            NSUserDefaults.StandardUserDefaults.RegisterDefaults (userDefautls);
+            NSUserDefaults.StandardUserDefaults.Synchronize ();
+
             Shared.conditionals = new Conditionals();
 
             if (!Resolver.IsSet)

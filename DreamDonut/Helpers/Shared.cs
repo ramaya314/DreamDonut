@@ -549,7 +549,7 @@ namespace DreamDonut.Utilities
 		public static string AppName { 
 			get {
 
-				var nativeOperations = Resolver.Resolve<INativeOperations> ();
+                var nativeOperations = DependencyService.Get<INativeOperations> ();
 				return nativeOperations.AppName;
 			}
 		}
@@ -557,7 +557,7 @@ namespace DreamDonut.Utilities
 		public static string AppVersion { 
 			get {
 
-				var nativeOperations = Resolver.Resolve<INativeOperations> ();
+                var nativeOperations = DependencyService.Get<INativeOperations> ();
 				return nativeOperations.AppVersion;
 			}
 		}
@@ -737,7 +737,7 @@ namespace DreamDonut.Utilities
         /// <returns><c>true</c>, if internet conection was valided, <c>false</c> otherwise.</returns>
 		public static bool ValidInternetConectionExists()
 		{
-			var device = Resolver.Resolve<IDevice>();
+            var device = DependencyService.Get<IDevice>();
 			NetworkStatus networkStatus = device.Network.InternetConnectionStatus();
 			return networkStatus !=
                 NetworkStatus.NotReachable;
@@ -749,7 +749,7 @@ namespace DreamDonut.Utilities
         /// <returns><c>true</c>, if internet conection is on wifi, <c>false</c> otherwise.</returns>
         public static bool ValidWifiConectionExists()
         {
-            var device = Resolver.Resolve<IDevice>();
+            var device = DependencyService.Get<IDevice>();
             NetworkStatus networkStatus = device.Network.InternetConnectionStatus();
             return networkStatus == NetworkStatus.ReachableViaWiFiNetwork;
         }

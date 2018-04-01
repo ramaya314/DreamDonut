@@ -18,21 +18,21 @@ namespace DreamDonut.Pages
                 Title="Home"
             });
             gamePage.Title = "Home";
-            gamePage.Icon = "donutTabIcon30";
+            gamePage.Icon = "donutTabIcon";
             Children.Add (gamePage);
 
             var aboutDreamersPage = new DreamNavigationPage (new AboutDreamersPage{
                 BackgroundImageSource = "butterfly.jpg"
             });
             aboutDreamersPage.Title = "About Mason DREAMers";
-            aboutDreamersPage.Icon = "Juan32.png";
+            aboutDreamersPage.Icon = "dreamersTabIcon";
             Children.Add (aboutDreamersPage);
 
             var aboutAppPage = new DreamNavigationPage (new AboutAppPage{
                 BackgroundImageSource = "butterfly.jpg"
             });
             aboutAppPage.Title = "About App";
-            aboutAppPage.Icon = "help-white30.png";
+            aboutAppPage.Icon = "aboutTabIcon";
             Children.Add (aboutAppPage);
 
             BarBackgroundColor = ColorPalette.PrimaryColor;

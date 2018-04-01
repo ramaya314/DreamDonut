@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+        xmlns:Helpers="clr-namespace:DreamDonut.Helpers;assembly=DreamDonut"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+        x:Class="DreamDonut.Components.RateExperienceView">
+    <ContentView.Content>
+
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <Label 
+                HorizontalTextAlignment="Center" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Center" 
+                Text="Rate your experience"
+                Grid.Row="0" 
+                Grid.Column="0"
+                Grid.ColumnSpan="5"/>
+
+
+            <Label x:Name="ErrorMessageLabel"
+                HorizontalTextAlignment="Center" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"
+                FontAttributes="Bold"
+                TextColor="Maroon"
+                VerticalTextAlignment="Center" 
+                IsVisible="false"
+                Text="Sorry, your feedback could not be sent at this time. Please try again later."
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="5"/>
+
+            <Label x:Name="SuccessMessageLabel"
+                HorizontalTextAlignment="Center" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"
+                FontAttributes="Bold"
+                TextColor="{Binding Source={x:Static Helpers:ColorPalette.PrimaryColor}}"
+                VerticalTextAlignment="Center" 
+                IsVisible="false"
+                Text="Thank You! Your feedback has been recorded"
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="5"/>
+
+            <Image x:Name="RateButton1" Source="faceRate1.png" 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="{Binding ButtonsVisible}"
+                Grid.Row="1" 
+                Grid.Column="0"/>
+
+            <ActivityIndicator 
+                HorizontalOptions="FillAndExpand"
+                IsRunning="true"
+                IsVisible="{Binding ActivityIndicatorVisible}"
+                Grid.Row="1" 
+                Grid.Column="0" 
+                Grid.ColumnSpan="5" />
+
+            <Image x:Name="RateButton2" Source="faceRate2.png" 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="{Binding ButtonsVisible}"
+                Grid.Row="1" 
+                Grid.Column="1"/>
+
+
+            <Image x:Name="RateButton3" Source="faceRate3.png" 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="{Binding ButtonsVisible}"
+                Grid.Row="1" 
+                Grid.Column="2"/>
+
+
+            <Image x:Name="RateButton4" Source="faceRate4.png" 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="{Binding ButtonsVisible}"
+                Grid.Row="1" 
+                Grid.Column="3"/>
+
+
+            <Image x:Name="RateButton5" Source="faceRate5.png" 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="{Binding ButtonsVisible}"
+                Grid.Row="1" 
+                Grid.Column="4"/>
+
+
+            
+        </Grid>
+    </ContentView.Content>
+</ContentView>

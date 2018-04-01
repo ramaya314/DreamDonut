@@ -152,6 +152,7 @@
     <Reference Include="XLabs.Forms.Droid">
       <HintPath>..\packages\XLabs.Forms.2.0.5782\lib\MonoAndroid\XLabs.Forms.Droid.dll</HintPath>
     </Reference>
+    <Reference Include="System.Json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DreamDonut\DreamDonut.csproj">
@@ -182,13 +183,31 @@
     <AndroidResource Include="Resources\drawable\butterfly.jpg" />
     <AndroidResource Include="Resources\drawable\donutSimple512.png" />
     <AndroidResource Include="Resources\drawable\dreamTeam.jpg" />
-    <AndroidResource Include="Resources\drawable\help-white30.png" />
+    <AndroidResource Include="Resources\drawable\helpTabIcon.png" />
     <AndroidResource Include="Resources\drawable\IceImage.png" />
     <AndroidResource Include="Resources\drawable\IconRoundedCorners.png" />
     <AndroidResource Include="Resources\drawable\IconTransparent.png" />
     <AndroidResource Include="Resources\drawable\Juan32.png" />
     <AndroidResource Include="Resources\drawable\logoTransparent.png" />
     <AndroidResource Include="Resources\drawable\logoWhite.png" />
+    <AndroidResource Include="Resources\drawable\donutTabIcon30.png" />
+    <AndroidResource Include="Resources\drawable\faceRate1.png" />
+    <AndroidResource Include="Resources\drawable\faceRate2.png" />
+    <AndroidResource Include="Resources\drawable\faceRate3.png" />
+    <AndroidResource Include="Resources\drawable\faceRate4.png" />
+    <AndroidResource Include="Resources\drawable\faceRate5.png" />
+    <AndroidResource Include="Resources\drawable\aboutTabIcon.png" />
+    <AndroidResource Include="Resources\drawable\donutTabIcon.png" />
+    <AndroidResource Include="Resources\drawable\dreamersTabIcon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\aboutTabIcon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\donutTabIcon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\dreamersTabIcon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\aboutTabIcon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\donutTabIcon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dreamersTabIcon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\aboutTabIcon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\donutTabIcon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dreamersTabIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />

@@ -140,6 +140,9 @@
     <Reference Include="XLabs.Forms.iOS">
       <HintPath>..\packages\XLabs.Forms.2.0.5782\lib\Xamarin.iOS10\XLabs.Forms.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DreamDonut\DreamDonut.csproj">
@@ -184,18 +187,24 @@
     <Compile Include="Renderers\CenterTextDatePickerRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\help-white30.png" />
     <BundleResource Include="Resources\IceImage.png" />
-    <BundleResource Include="Resources\Juan32.png" />
+    <BundleResource Include="Resources\dreamersTabIcon.png" />
     <BundleResource Include="Resources\logoTransparent.png" />
     <BundleResource Include="Resources\logoWhite.png" />
     <BundleResource Include="Resources\dreamTeam.jpg" />
     <BundleResource Include="Resources\butterfly.jpg" />
     <BundleResource Include="Resources\donutSimple512.png" />
-    <BundleResource Include="Resources\donutTabIcon30.png" />
-    <BundleResource Include="Resources\donutTabIcon30%402x.png" />
+    <BundleResource Include="Resources\donutTabIcon.png" />
+    <BundleResource Include="Resources\donutTabIcon%402x.png" />
     <BundleResource Include="Resources\IconRoundedCorners.png" />
     <BundleResource Include="Resources\IconTransparent.png" />
+    <BundleResource Include="Resources\faceRate1.png" />
+    <BundleResource Include="Resources\faceRate2.png" />
+    <BundleResource Include="Resources\faceRate3.png" />
+    <BundleResource Include="Resources\faceRate4.png" />
+    <BundleResource Include="Resources\faceRate5.png" />
+    <BundleResource Include="Resources\aboutTabIcon.png" />
+    <BundleResource Include="Resources\aboutTabIcon%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" />
